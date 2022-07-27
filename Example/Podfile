@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RequestLibrary_Example' do
+  pod 'RequestLibrary', :path => '../'
+
+  target 'RequestLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
