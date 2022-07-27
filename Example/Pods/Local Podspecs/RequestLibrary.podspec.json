@@ -1,0 +1,22 @@
+{
+  "name": "RequestLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of RequestLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/YeskendirAyat/RequestLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "YeskendirAyat": "a_eskendir08@mail.ru"
+  },
+  "source": {
+    "git": "https://github.com/YeskendirAyat/RequestLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "RequestLibrary/Classes/**/*"
+}

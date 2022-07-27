@@ -1,0 +1,16 @@
+PODS:
+  - RequestLibrary (0.1.0)
+
+DEPENDENCIES:
+  - RequestLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  RequestLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RequestLibrary: 124f198b6f0b0c8e082d5fbe804b6391b62804ca
+
+PODFILE CHECKSUM: a187c3faf2b29dce15db62cca659a29220ed0027
+
+COCOAPODS: 1.11.3
