@@ -1,16 +1,48 @@
 PODS:
-  - RequestLibrary (0.1.0)
+  - Alamofire (5.6.2)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - RequestLibrary (0.1.0):
+    - Moya (~> 15.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - Moya (~> 15.0)
   - RequestLibrary (from `../`)
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
 
 EXTERNAL SOURCES:
   RequestLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RequestLibrary: 124f198b6f0b0c8e082d5fbe804b6391b62804ca
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RequestLibrary: 4b0d4dfe3f1d2813f56582bc6e26cf1d1f7094b7
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: a187c3faf2b29dce15db62cca659a29220ed0027
+PODFILE CHECKSUM: 684e727eb314ed91fc554482ec62d1b67ee10259
 
 COCOAPODS: 1.11.3

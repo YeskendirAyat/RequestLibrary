@@ -15,6 +15,10 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		83DC4916A7FE42E626413E17 /* Pods_RequestLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAEE5FB27D66DBA2CE629DB /* Pods_RequestLibrary_Tests.framework */; };
 		87B509A0B1F44EDDFAF25D25 /* Pods_RequestLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7EDDD3E6116CF5DD8B8503 /* Pods_RequestLibrary_Example.framework */; };
+		FA7BED68289D365C002DA7CC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BED67289D365C002DA7CC /* Models.swift */; };
+		FA83F34C2898EFB200974DCD /* ProvincesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83F34B2898EFB200974DCD /* ProvincesViewController.swift */; };
+		FA911F8D289BC99200B0DC1E /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA911F8C289BC99200B0DC1E /* CitiesViewController.swift */; };
+		FABE9BBB28A10373007CD112 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9BBA28A10373007CD112 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8C96C60E44D0063BCB56BCA3 /* Pods-RequestLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-RequestLibrary_Example/Pods-RequestLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAAEE5FB27D66DBA2CE629DB /* Pods_RequestLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5638C7BE1F890863B829D2 /* RequestLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RequestLibrary.podspec; path = ../RequestLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA7BED67289D365C002DA7CC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FA83F34B2898EFB200974DCD /* ProvincesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesViewController.swift; sourceTree = "<group>"; };
+		FA911F8C289BC99200B0DC1E /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		FABE9BBA28A10373007CD112 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FA83F34B2898EFB200974DCD /* ProvincesViewController.swift */,
+				FA911F8C289BC99200B0DC1E /* CitiesViewController.swift */,
+				FA7BED67289D365C002DA7CC /* Models.swift */,
+				FABE9BBA28A10373007CD112 /* CustomCell.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -290,11 +302,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RequestLibrary_Example/Pods-RequestLibrary_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/RequestLibrary/RequestLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RequestLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,8 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA83F34C2898EFB200974DCD /* ProvincesViewController.swift in Sources */,
+				FA911F8D289BC99200B0DC1E /* CitiesViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FABE9BBB28A10373007CD112 /* CustomCell.swift in Sources */,
+				FA7BED68289D365C002DA7CC /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

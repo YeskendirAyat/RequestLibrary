@@ -1,13 +1,14 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '15.0'
 
 target 'RequestLibrary_Example' do
   pod 'RequestLibrary', :path => '../'
-
+  pod 'Moya', '~> 15.0'
+  pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   target 'RequestLibrary_Tests' do
-    inherit! :search_paths
-
-    
+    inherit! :search_paths    
   end
 end

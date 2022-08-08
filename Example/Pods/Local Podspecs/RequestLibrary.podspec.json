@@ -1,8 +1,8 @@
 {
   "name": "RequestLibrary",
   "version": "0.1.0",
-  "summary": "A short description of RequestLibrary.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "RequestLibrary.",
+  "description": "'TODO: Add long description of the pod here.'",
   "homepage": "https://github.com/YeskendirAyat/RequestLibrary",
   "license": {
     "type": "MIT",
@@ -16,7 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "15.0"
   },
-  "source_files": "RequestLibrary/Classes/**/*"
+  "source_files": "RequestLibrary/Classes/**/*",
+  "dependencies": {
+    "Moya": [
+      "~> 15.0"
+    ]
+  }
 }
