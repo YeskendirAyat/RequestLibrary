@@ -19,6 +19,7 @@ import RxSwift
 class ViewController: UIViewController{
     
     let moyaProvider = MoyaProvider<RequestService>(plugins: [CredentialsPlugin { _ -> URLCredential? in URLCredential(user: "ayeskendir08@gmail.com", password: "A_a12345", persistence: .none)}])
+    
     let covidData = CovidData()
     var regionsResult: CountryList?
     var tableView: UITableView!

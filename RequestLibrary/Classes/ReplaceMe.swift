@@ -12,7 +12,7 @@ public enum RequestService{
 }
 
 // class CovidData responsible for request and response
-// Why i don't use is realization? Cause 
+// Why i don't use is realization? Cause, the function returned empty values, that is, it returns immediately, and not after assigning a value. I had to implement the logic in the view controller.
 
 public class CovidData{
     var countryResults: CountryList?

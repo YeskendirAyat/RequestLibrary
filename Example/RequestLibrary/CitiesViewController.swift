@@ -10,6 +10,8 @@ import UIKit
 import Moya
 import RequestLibrary
 
+// last VC is represent cities with confirmed sick and deaths.
+
 class CitiesViewController: UIViewController {
     
     var moyaProvider = MoyaProvider<RequestService>(plugins: [CredentialsPlugin { _ -> URLCredential? in URLCredential(user: "ayeskendir08@gmail.com", password: "A_a12345", persistence: .none)}])

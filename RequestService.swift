@@ -8,7 +8,6 @@
 import Foundation
 import Moya
 
-// RequestService is my
 
 extension RequestService: TargetType{
     
@@ -34,6 +33,7 @@ extension RequestService: TargetType{
         }
     }
     
+//  The HTTP method used in the request.
     public var method: Moya.Method {
         switch self {
         case .getRegions, .getTotalData, .getProvinces, .getCityInfo, .getRegionCities:
