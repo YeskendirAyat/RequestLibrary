@@ -11,6 +11,11 @@ import RequestLibrary
 import Moya
 import RxSwift
 
+// COVID-19 data where you can see in which city how many people are sick now, and how many deaths until today.
+// First VC presented list of counties.
+
+// API link: https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/
+
 class ViewController: UIViewController{
     
     let moyaProvider = MoyaProvider<RequestService>(plugins: [CredentialsPlugin { _ -> URLCredential? in URLCredential(user: "ayeskendir08@gmail.com", password: "A_a12345", persistence: .none)}])

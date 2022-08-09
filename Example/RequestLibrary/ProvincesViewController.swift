@@ -11,6 +11,9 @@ import RequestLibrary
 import Moya
 import SnapKit
 
+// ProvincesViewController presented list of provinces/regions of selected country.
+//
+
 class ProvincesViewController: UIViewController {
     
     var moyaProvider = MoyaProvider<RequestService>(plugins: [CredentialsPlugin { _ -> URLCredential? in URLCredential(user: "ayeskendir08@gmail.com", password: "A_a12345", persistence: .none)}])

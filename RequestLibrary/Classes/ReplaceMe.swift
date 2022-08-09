@@ -11,6 +11,9 @@ public enum RequestService{
     case getCityInfo(cityName: String, regionProvince: String)
 }
 
+// class CovidData responsible for request and response
+// Why i don't use is realization? Cause 
+
 public class CovidData{
     var countryResults: CountryList?
     var results: CountryList = CountryList(data: [])

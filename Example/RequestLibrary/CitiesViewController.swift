@@ -33,7 +33,7 @@ class CitiesViewController: UIViewController {
     }
     
     func getData(){
-        self.moyaProvider.request(.getRegionCities(regionName: provinceName) ){
+        self.moyaProvider.request(.getRegionCities(regionName: provinceName)){
             [self] (result) in
             switch result{
             case .success(let response):
@@ -41,7 +41,6 @@ class CitiesViewController: UIViewController {
                 let json = try! JSONSerialization.jsonObject(with: response.data, options: []) as! [String:Any]
                 let data = (((json["data"] as! NSArray)[0] as! [String:Any])["region"] as! [String:Any])["cities"] as! NSArray
                 if data.count == 0 {return}
-                
                 for i in data{
                     regionsResult.append(City(json: i as! [String : Any])!)
                     self.tableView.reloadData()
@@ -67,7 +66,7 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell
-        cell.label.text = "\(regionsResult[indexPath.item].name) | confirmed: \(String(regionsResult[indexPath.item].confirmed))  | death: \(String(regionsResult[indexPath.item].deaths))"
+        cell.label.text = "\(regionsResult[indexPath.item].name) : confirmed: \(String(regionsResult[indexPath.item].confirmed))  | death: \(String(regionsResult[indexPath.item].deaths))"
         return cell
     }
 }
